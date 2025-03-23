@@ -1,0 +1,95 @@
+🖌 Interface (Front-end)
+
+    Tela Principal:
+
+        Exibe uma frase aleatória no centro da tela.
+
+        Botão para "Escreva sua linha".
+
+    Tela de Escrita:
+
+        Caixa de texto para o usuário digitar uma frase.
+
+        Botão "Enviar".
+
+        Após enviar, o usuário recebe uma nova frase automaticamente.
+
+⚙️ Back-end e Banco de Dados
+
+    Rota GET (/random): Retorna uma frase aleatória.
+
+    Rota POST (/submit): Salva uma nova frase no banco.
+
+    Banco de Dados (MongoDB, SQLite ou Firebase Firestore):
+
+        Tabela/Coleção lines:
+
+            id (único)
+
+            text (a frase)
+
+            timestamp (quando foi enviada)
+
+🚀 Tecnologias sugeridas
+
+    Front-end: Next.js + Tailwind CSS (design clean e rápido).
+
+    Back-end: Node.js com Express.js (leve e simples).
+
+    Banco de Dados: MongoDB (com Mongoose) ou Firebase Firestore.
+
+    Deploy: Vercel (para o front) + Railway/Render (para o backend).
+
+💡 Extras que podemos adicionar depois:
+
+    Um contador de quantas frases já foram enviadas.
+
+    Um botão "Gostei" (sem login, só pra ver popularidade das frases).
+
+    Um sistema de moderação simples (evitar spam/palavrões).
+
+    🏗 Possíveis Funcionalidades Adicionais
+
+1️⃣ Modo “Explore” (Navegação Livre)
+
+    Um botão "Ver Mais" que carrega outras frases aleatórias.
+
+    Ou um sistema de rolagem infinita, mas mantendo a simplicidade.
+
+2️⃣ Frases Favoritadas (Sem Login)
+
+    O usuário pode curtir uma frase, e ela fica armazenada no LocalStorage do navegador.
+
+    Uma aba "Minhas Favoritas" para revisitá-las.
+
+3️⃣ Modo “Histórico Vivo”
+
+    Em vez de apenas mostrar frases aleatórias, poderia haver uma seção que mostra as últimas frases enviadas em tempo real.
+
+    Dá um senso de comunidade, como um mural de pensamentos instantâneos.
+
+4️⃣ Frases Temáticas
+
+    Deixar o usuário escolher um tema antes de enviar/ver frases. Exemplos:
+
+        💡 Motivação
+
+        🤔 Filosofia
+
+        😂 Engraçadas
+
+        💔 Amor
+
+    Isso daria mais controle sobre o que ele recebe.
+
+5️⃣ Modo “Desafio”
+
+    Um sistema onde a frase que você recebe precisa ser continuada de alguma forma.
+
+    Criaria encadeamentos de pensamentos entre os usuários.
+
+6️⃣ Anonimato Estilizado
+
+    Em vez de nomes de usuários, cada frase poderia ser assinada com um emoji aleatório ou uma palavra gerada aleatoriamente (ex: "Pensador Noturno" ou "Chuva Azul").
+
+🎯 Resumo: Se for para adicionar algo além do básico, eu focaria no Histórico Vivo, Frases Temáticas ou o Modo Explore. Eles mantêm o espírito do projeto sem tornar a experiência complexa.
